@@ -17,6 +17,13 @@
 | git  | List all new or modified files                 |
 | git  | Show file differences that haven't been staged |
 
+### 단어장 (모르는 용어가 있었다면, 간단히 정리해 봅시다) 🔖
+<p style="width: 100%; backgroundColor: floralwhite;">
+<span></span>:<span></span></p>
+
+```
+```
+
 ### 떠오르는 생각이 있었니요? 나의 사색을 기록해 봅시다 💭
 ```
 ```
