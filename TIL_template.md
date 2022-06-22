@@ -2,6 +2,8 @@
 
 **TIL(Today I learn) 기록일**: (20XX.XX.XX)
 
+**오늘 읽은 범위**: X장 xxxxxx
+
 ### 오늘 작성한 TIL에 제목을 붙인다면? 📑
 
 #### +간결한 세 줄 요약
@@ -9,6 +11,11 @@
 ---
 
 ### 책속 한구절 보관함 📖
+
+| p    | text                                           |
+| ---- | ---------------------------------------------- |
+| git  | List all new or modified files                 |
+| git  | Show file differences that haven't been staged |
 
 ### 떠오르는 생각이 있었니요? 나의 사색을 기록해 봅시다 💭
 ```
