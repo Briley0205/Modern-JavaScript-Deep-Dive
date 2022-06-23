@@ -18,9 +18,6 @@
 | git  | Show file differences that haven't been staged |
 
 ### 단어장 (모르는 용어가 있었다면, 간단히 정리해 봅시다) 🔖
-<p style="width: 100%; backgroundColor: floralwhite;">
-<span></span>:<span></span></p>
-
 ```
 ```
 
