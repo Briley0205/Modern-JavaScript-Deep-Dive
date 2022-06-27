@@ -1,8 +1,8 @@
 ## 📕 오늘 공부한 내용, 이렇게 정리해 봅시다. ✒
 
-**TIL(Today I learn) 기록일**: (20XX.XX.XX)
+**TIL(Today I learn) 기록일** : (20XX.XX.XX)
 
-**오늘 읽은 범위**: X장 xxxxxx
+**오늘 읽은 범위** : X장 xxxxxx
 
 ### 오늘 작성한 TIL에 제목을 붙인다면? 📑
 
