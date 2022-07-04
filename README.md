@@ -54,7 +54,7 @@
 | 욘스 ||||
 | 이음 ||||
 | 제로 ||||
-| 찰리 ||||
+| 찰리 <img src="https://avatars.githubusercontent.com/u/88550876?s=64&amp;v=4" alt="@leeokdk" size="32" height="32" width="32" style="border-radius: 50%;" data-view-component="true" class="avatar circle"> ||||
 | 피엔 ||||
 
 </br>
