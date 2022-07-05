@@ -41,21 +41,21 @@
 | 이름 |  한 줄 목표  | 옐로 카드 | 묻지마 불참권 |
 | ---- | ----------- | --------- | ------------ |
 | <center><img src="https://avatars.githubusercontent.com/u/89088205?s=64&amp;v=4" alt="@matty255" size="32" height="32" width="32" data-view-component="true" class="avatar circle"></center> <center>게더</center> ||||
-| <center></center><center>고객</center> ||||
-| <center></center><center>공냥</center> ||||
-| <center></center><center>또치</center> ||||
-| <center></center><center>마당</center> ||||
-| <center></center><center>믹스</center> ||||
-| <center></center><center>박건</center> ||||
-| <center></center><center>보리</center> ||||
-| <center></center><center>빡준</center> ||||
-| <center></center><center>시후</center> ||||
-| <center></center><center>신장</center> ||||
-| <center></center><center>욘스</center> ||||
-| <center></center><center>이음</center> ||||
-| <center></center><center>제로</center> ||||
-| <center><img src="https://avatars.githubusercontent.com/u/88550876?s=64&amp;v=4" alt="@leeokdk" size="32" height="32" width="32" style="border-radius: 50%;" data-view-component="true" class="avatar circle"> </center><center>찰리</center> ||||
-| <center></center><center>피엔</center> ||||
+| <center>고객</center> ||||
+| <center>공냥</center> ||||
+| <center>또치</center> ||||
+| <center>마당</center> ||||
+| <center>믹스</center> ||||
+| <center>박건</center> ||||
+| <center>보리</center> ||||
+| <center>빡준</center> ||||
+| <center>시후</center> ||||
+| <center>신장</center> ||||
+| <center>욘스</center> ||||
+| <center>이음</center> ||||
+| <center>제로</center> ||| 🟥 |
+| <center>찰리</center> ||||
+| <center>피엔</center> ||||
 
 </br>
 
