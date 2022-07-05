@@ -41,7 +41,7 @@
 | 이름 |  한 줄 목표  | 옐로 카드 | 묻지마 불참권 |
 | ---- | ----------- | --------- | ------------ |
 | <center><img src="https://avatars.githubusercontent.com/u/89088205?s=64&amp;v=4" alt="@matty255" size="32" height="32" width="32" data-view-component="true" class="avatar circle"></center> <center>게더</center> ||||
-| <center>고객</center> ||||
+| <center>[고객](https://github.com/RyanDeclan)</center> ||||
 | <center>공냥</center> ||||
 | <center>또치</center> ||||
 | <center>마당</center> ||||
