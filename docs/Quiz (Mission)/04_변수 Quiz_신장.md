@@ -38,6 +38,7 @@ function greet(name) {
 위 함수는 어떻게 실행될까 ? 소스코드의 실행 결과는 어떨까?
 
 Hello, my name is Shihu, and I'm undefined years old
+
 Hello, my name is Shihu, and I'm 21 years old
 
 왜 그렇게 생각하는가? </br>
