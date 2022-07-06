@@ -2,7 +2,7 @@
 
 1. 다음 소스 코드의 결과를 예측하고, 그 이유를 설명하라.
 
-```
+```js
 greet('Shihu');
 
 function greet(name) {
@@ -25,6 +25,6 @@ function greet(name) {
 
 해설 및 답 입력
 
-```
+```js
 여기에 코드 입력
 ```
