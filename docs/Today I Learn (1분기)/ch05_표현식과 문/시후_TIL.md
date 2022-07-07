@@ -27,7 +27,10 @@
 
 모든 표현식은 문이다. 하지만 표현식이 아닌 문도 있다.</br>
 이를 구별하기 위해서는, 값으로 평가될 수 있는 문인지 살펴야 한다.
+
+```html
 <div style="width: 200px; height: 200px; background: tomato; border-radius: 50%; display: flex; flex-direction: column;align-items: center;"><p style="height: 40px;">문</p><div style="width: 150px; height: 150px; background: teal; border-radius: 50%; text-align: center;">표현식<p style="text-align: center;">= 값으로 평가될 </p><p>수 있는 문</p></div></div> 
+```
 
 ---
 
