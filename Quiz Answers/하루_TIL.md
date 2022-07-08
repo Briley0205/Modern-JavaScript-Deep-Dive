@@ -22,7 +22,7 @@ function greet(name) {
 > 위 함수는 어떻게 실행될까 ? 소스코드의 실행 결과는 어떨까?
 >> 왜 그렇게 생각하는가? </br>
 >>> 1. 변수 호이스팅을 이유로 greet 이라는 함수를 선언   
->>> 2. 소스코드 작성 순서대로 greet 함수 실행. 이때 'Shihu' 프로퍼티 value를 줌
+>>> 2. 소스코드 작성 순서대로 greet 함수 실행. 이때 'Shihu' 파라미터 value를 줌
 >>> 3. 함수가 실행되며 age 변수가 선언됨. 이때 값은 undifiend
 >>> 4. 이후 소스코드 작성 순서대로 위에서 아래로 실행됨   
 >>> `Hello, my name is Shihu, and I'm undifiend years old` 콘솔창에 출력
@@ -40,7 +40,7 @@ function greet
 // 함수 선언, 이때 메모리에 공간을 확보하고 undifiend 값을 가짐
 
 greet('Shihu');
-// greet 함수 call, 'Shihu' 프로퍼티 value 전달, 이때 name(key) 에 'Shihu' 값이 할당됨(책에 없는 내용이라 확실치 않음..)
+// greet 함수 call, 'Shihu' 파라미터 value 전달, 이때 name(key) 에 'Shihu' 값이 할당됨(책에 없는 내용이라 확실치 않음..)
 
 var age;
 // age 변수 선언 메모리에 공간을 확보하고 undifiend 값을 가짐 (이후 위에서 아래로 순서대로 코드 실행)
