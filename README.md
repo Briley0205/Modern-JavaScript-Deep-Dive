@@ -38,24 +38,24 @@
 
 ---
 
-| 이름 |  한 줄 목표  | 옐로 카드 | 묻지마 불참권 |
+| 이름 |  한 줄 목표  | 옐로 카드 | 묻지마 불참 횟수 |
 | ---- | ----------- | --------- | ------------ |
-| <center>[게더](https://github.com/matty255)</center> ||||
-| <center>[고객](https://github.com/RyanDeclan)</center> ||||
-| <center>[공냥](https://github.com/One-SSun)</center> ||||
-| <center>[또치](https://github.com/chaeikim-tech)</center> ||||
-| <center>[마당](https://github.com/mdgarden)</center> ||||
-| <center>[믹스](https://github.com/mixnuts211)</center> ||||
-| <center>[박건](https://github.com/GEON1999)</center> ||||
-| <center>[보리](https://github.com/KooAme)</center> ||||
-| <center>[빡준](https://github.com/wnsguddl789)</center> ||||
-| <center>[시후](https://github.com/Briley0205)</center> ||||
-| <center>[신장](https://github.com/yyyThoughts)</center> ||||
-| <center>[욘스](https://github.com/yonslee)</center> ||||
-| <center>[이음](https://github.com/hayatshin)</center> ||||
-| <center>[제로](https://github.com/heejunggg)</center> ||| 🟥 |
-| <center>[찰리](https://github.com/leeokdk)</center> ||||
-| <center>[피엔](https://github.com/hayatshin)</center> ||||
+| <center>[게더](https://github.com/matty255)</center> ||  |  |
+| <center>[고객](https://github.com/RyanDeclan)</center> ||  |  |
+| <center>[공냥](https://github.com/One-SSun)</center> ||  |  |
+| <center>[또치](https://github.com/chaeikim-tech)</center> ||  |  |
+| <center>[마당](https://github.com/mdgarden)</center> ||  |  |
+| <center>[믹스](https://github.com/mixnuts211)</center> ||  |  |
+| <center>[하루](https://github.com/GEON1999)</center> ||  |  |
+| <center>[보리](https://github.com/KooAme)</center> ||  |  |
+| <center>[빡준](https://github.com/wnsguddl789)</center> ||  |  |
+| <center>[시후](https://github.com/Briley0205)</center> |||  |
+| <center>[신장](https://github.com/yyyThoughts)</center> ||  |  |
+| <center>[욘스](https://github.com/yonslee)</center> ||  |  |
+| <center>[이음](https://github.com/hayatshin)</center> ||  |  |
+| <center>[제로](https://github.com/heejunggg)</center> || 🟨 | 🟥  |
+| <center>[찰리](https://github.com/leeokdk)</center> ||  |  |
+| <center>[피엔](https://github.com/hayatshin)</center> ||  |  |
 
 </br>
 
@@ -111,8 +111,6 @@ github에 잔디가 쌓이는 건 덤! 독후감을 요약한 문구와 함께, 
 - 다른 분의 것을 베낀 정황이 발견되면, 즉시 퇴장하셔야 합니다.
 
 ### 시작 예정일 : 7월 첫째 주 월요일 (07.04)
-
----
 
 <!--자바스크립트를 이용한 앱을 만들면서, 이런 궁금증이 든 적 없는가? </br>
 '어떻게 쓰는 지는 알겠다만, 이 깡통이 어떻게 내가 작성한 스크립트를 읽고 실행하는 거지?'</br>
