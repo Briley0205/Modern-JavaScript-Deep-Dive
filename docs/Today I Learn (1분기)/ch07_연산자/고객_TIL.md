@@ -143,7 +143,7 @@ console.log(result, x); // 5 5
 = !== 불일치 비교 x !== y x와 y의 값과 타입이 다름
 
 ```
-
+```
 여기서는  NaN === NaN // false
         0  === -0 // true
         0  == -0 // true
@@ -151,6 +151,7 @@ console.log(result, x); // 5 5
       이것들만 조심하자
 0 같은 경우는 object.is를 사용하면된다
 Objefct.is(-0, +0);
+```
 
 ---
 
