@@ -43,7 +43,7 @@
 | <center>[게더](https://github.com/matty255)</center> ||  |  |
 | <center>[고객](https://github.com/RyanDeclan)</center> ||  |  |
 | <center>[공냥](https://github.com/One-SSun)</center> ||  |  |
-| <center>[또치](https://github.com/chaeikim-tech)</center> ||  | 🟥 |
+| <center>[또치](https://github.com/chaeikim-tech)</center> ||  | 🟥🟥 |
 | <center>[마당](https://github.com/mdgarden)</center> ||  |  |
 | <center>[믹스](https://github.com/mixnuts211)</center> ||  | 🟥 |
 | <center>[하루](https://github.com/GEON1999)</center> ||  |  |
