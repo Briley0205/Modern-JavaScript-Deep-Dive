@@ -1,6 +1,6 @@
 ## 📕 오늘 공부한 내용, 이렇게 정리해 봅시다. ✒
 
-**TIL(Today I learn) 기록일** : 2022.07.11
+**TIL(Today I learn) 기록일** : 2022.07.15
 
 **오늘 읽은 범위** : 8장 제어문
 
@@ -28,7 +28,7 @@
 if (data: 조건식) {
     console.log('data is ready');
 }
-조건식과 블록문(코드 블록)으로 이루어진 조건문으로,
+조건식과 블록문(코드 블록) 으로 이루어진 조건문으로,
 조건식이 참이면 코드 블록이 실행된다.
 
 const Data = data ? 'data is ready' : 'loading...'
