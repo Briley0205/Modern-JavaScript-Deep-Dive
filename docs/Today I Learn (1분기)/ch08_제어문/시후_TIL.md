@@ -56,11 +56,11 @@ switch (textInput) {
 위 조건문은 input에 입력한 값에 따라 header색깔을 바꾼다.
 이 조건문을 if ...else 로 바꾸면 이렇게 할 수 있다.
 
-if (text === "red") {
+if (textInput === "red") {
     header.style.color = "red";
-} else if (text === "blue") {
+} else if (textInput === "blue") {
     header.style.color = "blue";
-} else if (text === "green") {
+} else if (textInput === "green") {
     header.style.color = "green";
 } else {
     header.style.color = "black";
