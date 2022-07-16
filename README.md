@@ -45,7 +45,7 @@
 | <center>[공냥](https://github.com/One-SSun)</center> ||  |  |
 | <center>[또치](https://github.com/chaeikim-tech)</center> ||  | 🟥🟥 |
 | <center>[마당](https://github.com/mdgarden)</center> ||  |  |
-| <center>[믹스](https://github.com/mixnuts211)</center> ||  | 🟥 |
+| <center>[믹스](https://github.com/mixnuts211)</center> ||  |  |
 | <center>[하루](https://github.com/GEON1999)</center> ||  |  |
 | <center>[보리](https://github.com/KooAme)</center> ||  |  |
 | <center>[빡준](https://github.com/wnsguddl789)</center> ||  |  |
