@@ -86,9 +86,10 @@ function sum(a,b) {
  var result =x % 2 ? '홀수' : '짝수';
  consoel.log(result); // 짝수
  ```
- 
- 
- 
+ <br/>
+ <br/>
+ <br/>
+ <br/>
  
  - switch문
 
