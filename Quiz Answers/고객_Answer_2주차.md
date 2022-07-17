@@ -32,13 +32,14 @@ function kakaopay (사용한금액, 할부횟수){
 #### 해설 및 풀이
 
 1번 
-
+```
 var x; 가 다르게 나올 것 같다. 
 x는 할당이 없기때문에  undefined라고 나오고 
 y는 string
 z는 뭐가나올까 ? null??  console.log 해보니 object가 나온다.   구글링해보니 자바스크립트 초기 설계오류 이고 계속 고치지 않는다고한다. 고치면 위험하다고 한다 https://archive.ph/sPyGA#selection-107.1-107.169
-
+```
 2번
+```
 var 스쳐가는통장 = 5000000;
 function kakaopay (사용한금액, 할부횟수){
   var total;
@@ -57,6 +58,7 @@ function kakaopay (사용한금액, 할부횟수){
 스쳐가는통장 = kakaopay(200000, 2);
 스쳐가는통장 = kakaopay(500000, 2);
 스쳐가는통장 = kakaopay(100000000000000);
+```
 
 > if문으로 만들어보았다.  0보다 작으면 함수를 바로 return시키고 그외에는 통장에서 사용한 금액이 차감되도록 하였다 단 할부가 존재하면 한달치만 차감되도록 하였다. 
 
