@@ -88,6 +88,8 @@ function sum(a,b) {
  ```
  
  
+ 
+ 
  - switch문
 
   > switch문의 표현식과 일치하는 case문이 없다면 실행 순서는 default문으로 이동한다. default문은 석택사항으로 사용할 수도 있고 사용하지 않을 수도 있다.
