@@ -39,7 +39,7 @@ y는 string
 z는 뭐가나올까 ? null??  console.log 해보니 object가 나온다.   구글링해보니 자바스크립트 초기 설계오류 이고 계속 고치지 않는다고한다. 고치면 위험하다고 한다 https://archive.ph/sPyGA#selection-107.1-107.169
 ```
 2번
-```
+```javascript
 var 스쳐가는통장 = 5000000;
 function kakaopay (사용한금액, 할부횟수){
   var total;
