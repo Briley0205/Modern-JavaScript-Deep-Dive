@@ -78,6 +78,7 @@ console.log(typeof z); // object
   // 할부횟수 = undefined일 시
   let 할부결제 = total - 사용한금액 / 할부횟수; 
   // typeof 할부횟수 === "number"일 시
+  
   total = 할부횟수 ? 할부결제 : 일시불결제
 ```
 
