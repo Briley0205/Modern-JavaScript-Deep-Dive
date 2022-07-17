@@ -90,6 +90,7 @@ function kakaopay(사용한금액, 할부횟수) {
   var total = 스쳐가는통장;
   let 일시불결제 = total - 사용한금액;
   let 할부결제 = total - 사용한금액 / 할부횟수;
+  
   if (사용한금액 > total) {
     console.log(`승인거절 남은 금액: ${total}`);
     return total;
