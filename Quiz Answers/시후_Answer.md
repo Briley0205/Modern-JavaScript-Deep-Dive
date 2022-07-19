@@ -95,9 +95,10 @@ function kakaopay(사용한금액, 할부횟수) {
   if (사용한금액 > total) {
     console.log(`승인거절 남은 금액: ${total}`);
     return total;
-  } else {
-    total = 할부횟수 ? 할부결제 : 일시불결제;
   }
+  
+  total = 할부횟수 ? 할부결제 : 일시불결제;
+
   console.log(total);
   return total;
 }
