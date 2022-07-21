@@ -51,7 +51,7 @@
 | <center>[빡준](https://github.com/wnsguddl789)</center> ||  | 🟥 |
 | <center>[시후](https://github.com/Briley0205)</center> |||  |
 | <center>[신장](https://github.com/yyyThoughts)</center> ||  |  |
-| <center>[욘스](https://github.com/yonslee)</center> ||  |  |
+| <center>[욘스](https://github.com/yonslee)</center> || 🟨 | 🟥 |
 | <center>[이음](https://github.com/hayatshin)</center> ||  |  |
 | <center>[제로](https://github.com/heejunggg)</center> || 🟨 | 🟥❌  |
 | <center>[찰리](https://github.com/leeokdk)</center> ||  | 🟥 |
