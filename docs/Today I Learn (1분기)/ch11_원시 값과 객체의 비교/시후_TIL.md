@@ -12,11 +12,11 @@
 
 ---
 
-| 원시 타입 (premitive type) | 객체 타입 (object / refrence type)  |
-| ---- | ------ |
-| 변경 불가능한 값 (immutable value) | 변경 가능한 값 (mutable value) |
-| 실제 값 저장 | 참조 값(메모리 주소) 저장 |
-| 값에 의한 전달 | 참조에 의한 전달 |
+|  | 원시 타입 (premitive type) | 객체 타입 (object / refrence type)  |
+| ---- | ------ |----|
+| 값의 종류 | 변경 불가능한 값 (immutable value) | 변경 가능한 값 (mutable value) |
+| 저장 내용 | 실제 값 저장 | 참조 값(메모리 주소) 저장 |
+| 전달 방식 | 값에 의한 전달 | 참조에 의한 전달 |
 
 
 ### 새로운 단어 정리 🔖
