@@ -83,9 +83,9 @@ const f = function add(x,y) {
 
 <img width="910" alt="image" src="https://user-images.githubusercontent.com/76567238/180667009-fd9a28cc-c64d-4a5f-a42b-69400e08f000.png">
 
- var num = 2;
+
      
-## 1) 함수 선언문
+## 1) 함수 선언문
  
  ```js
    
@@ -184,7 +184,8 @@ var sub = function add(x, y) {
 이처럼 함수 선언문이 코드의 선두로 끌어 올려진 것처럼 동작하는 자바스크립트 고유의 특징을 함수 호이스팅이라 한다.
 
 
-![Uploading image.png…]()
+<img width="896" alt="image" src="https://user-images.githubusercontent.com/76567238/180667111-cf20f392-a7f9-4660-addd-b17e64894033.png">
+
 
 
 
