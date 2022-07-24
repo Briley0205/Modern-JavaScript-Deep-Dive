@@ -38,10 +38,4 @@
 
 </br>
 
-### 책속 한구절 보관함 📖
-
-| p    | text                                           |
-| ---- | ---------------------------------------------- |
-| git  | List all new or modified files                 |
-| git  | Show file differences that haven't been staged |
 
