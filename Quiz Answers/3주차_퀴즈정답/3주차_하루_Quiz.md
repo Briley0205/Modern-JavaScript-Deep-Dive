@@ -156,9 +156,8 @@ console.log(person); // {name: 'Lee'}
 changeVal(primitive, person);
 // 함수 호출
 
-console.log(primitive); // 200 이 나올 것으로 예상 했는데 100 이 나옴 이유는 찾아볼 예정
-console.log(person); // {name: 'Kim'}
+console.log(primitive); // 100 원시 값은 원본이 훼손되지 않는다.
+console.log(person); // {name: 'Kim'} 객체는 원본이 훼손된다.
 ```
 
 
-자유롭게 풀이해주세요! 
