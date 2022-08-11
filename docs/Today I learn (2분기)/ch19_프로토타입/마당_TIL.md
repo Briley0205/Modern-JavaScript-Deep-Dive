@@ -107,3 +107,91 @@ console.log(circle2.getArea()); // 12.5663...
 
 > [!note] Object.prototype
 > 모든 객체는 프로토타입의 계층 구조인 #프로토타입\_체인 에 묶여 있다. 자바스크립트 엔진은 객체의 프로퍼티(메서드 포함)에 접근하려고 할 때 해당 객체에 접근하려는 프로퍼티가 없다면 `__proto__` 접근자 프로퍼티가 가리키는 참조를 따라 자신의 부모 역할을 하는 프로토타입의 프로퍼티를 순차적으로 검색한다. 프로토타입 체인의 종점, 즉 프로토타입 체인의 최상위 객체는 Object.prototype이며, 이 객체의 프로퍼티와 메서드는 모든 객체에 상속된다. [[#^78a4d6]]
+
+## 오버라이딩과 프로퍼티 섀도잉
+
+- 프로토타입이 소유한 프로퍼티(메서드 포함)를 프로토타입 프로퍼티, 인스턴스가 소유한 프로퍼티를 인스턴스 프로퍼티라고 함.
+- 상속 관계에 의해 프로퍼티가 가려지는 현상을 #프로퍼티\_섀도잉 property shadowing 이라 한다.
+- 프로토타입 프로퍼티를 변경 또는 삭제하려면 하위 객체를 통해 프로토타입 체인으로 접근하는 것이 아니라 프로토타입에 직접 접근해야 한다.
+  > [!abstract] 오버라이딩 overriding
+  > 상위 클래스가 가지고 있는 메서드를 하위 클래스가 재정의하여 사용하는 방식
+
+> [!abstract] 오버로딩 overloading
+> 함수의 이름은 동일하지만 매개변수의 타입 또는 개수가 다른 메서드를 구현하고 매개변수에 의해 메서드를 구별하여 호출하는 방식이다. 자바스크립트는 오버로딩을 지원하지 않지만 arguments 객체를 사용하여 구현할 수는 있다.
+
+## 프로토타입의 교체
+
+- 프로토타입은 임의의 다른 객체로 변경할 수 있음 = 부모 객체인 프로토타입을 동적으로 변경할 수 있음
+  - 이러한 특징을 활용하여 객체 간의 상속 관계를 동적으로 변경할 수 있음
+  - 프로토타입은 생성자 함수 또는 인스턴스에 의해 교체할 수 있음
+- ES6에서 도입된 클래스를 사용하면 간편하고 직관적으로 상속 관계를 구현할 수 있음
+
+## instanceof 연산자
+
+- instanceof 연산자는 이항 연산자로서 좌변에 객체를 가리키는 식별자, 우변에 생성자 함수를 가리키는 식별자를 피연산자로 받음. 우변의 피연산자가 함수가 아닌 경우 TypeError가 발생한다.
+- instanceof 연산자는 **생성자 함수의 prototype에 바인딩된 객체가 프로토타입 체인 상에 존재하는지 확인한다.**
+
+[예제19-46]
+
+```jsx
+// 생성자 함수
+function Person(name) {
+  this.name = name;
+}
+
+const me = new Person("Lee");
+
+// Person.prototype이 me 객체의 프로토타입 체인 상에 존재하므로 true로 평가된다.
+console.log(me instanceof Person); // true
+
+// Object.prototype이 me 객체의 프로토타입 체인 상에 존재하므로 true로 평가된다.
+console.log(me instanceof Object); // true
+```
+
+## 정적 프로퍼티/메서드
+
+- 정적 static 프로퍼티/메서드는 생성자 함수로 인스턴스를 생성하지 않아도 참조/호출할 수 있는 프로퍼티/메서드를 말함
+- 프로토타입 메서드를 호출하려면 인스턴스를 생성해야 하지만 정적 메서드는 인스턴스를 생성하지 않아도 호출할 수 있다.
+- MDN상에서도 정적 프로퍼티/메서드와 프로토타입 프로퍼티/메서드를 구분하여 소개하고 있음. 표기법만으로도 이를 구별할 수 있어야함.
+
+[예제19-56]
+
+```jsx
+// 생성자 함수
+function Person(name) {
+  this.name = name;
+}
+
+// 프로토타입 메서드
+Person.prototype.sayHello = function () {
+  console.log(`Hi! My name is ${this.name}`);
+};
+
+// 정적 프로퍼티
+Person.staticProp = "static prop";
+
+// 정적 메서드
+Person.staticMethod = function () {
+  console.log("staticMethod");
+};
+
+const me = new Person("Lee");
+
+// 생성자 함수에 추가한 정적 프로퍼티/메서드는 생성자 함수로 참조/호출한다.
+Person.staticMethod(); // staticMethod
+
+// 정적 프로퍼티/메서드는 생성자 함수가 생성한 인스턴스로 참조/호출할 수 없다.
+// 인스턴스로 참조/호출할 수 있는 프로퍼티/메서드는 프로토타입 체인 상에 존재해야 한다.
+me.staticMethod(); // TypeError: me.staticMethod is not a function
+```
+
+## 프로퍼티 존재 확인
+
+- in 연산자는 객체 내에 특정 프로퍼티가 존재하는지 여부를 확인한다.
+- Object.prototype.hasOwnProperty 메서드를 사용해도 객체에 특정 프로퍼티가 존재하는지 확인할 수 있다.
+
+## 프로퍼티 열거
+
+- for...in 문 : 객체의 모든 프로퍼티를 순회하며 열거 enumeration하려면 for...in문을 사용한다.
+  - `for (변수선언문 in 객체) {...}`
+- Object.keys/values/entries 메서드를 사용하겨 객체 자신의 프로퍼티인지 확인하는 추가 처리가 필요함.
