@@ -105,3 +105,172 @@ console.log(me.hasOwnProperty('name')); // true
 - 프로토타입 체인은 상속과 프로퍼티 검색을 위한 메커니즘이다.
 - 스코프 체인은 식별자 검색을 위한 메커니즘이다.
 - 스코프 체인과 프로토타입 체인은 별도로 동작하는 것이 아니라 서로 협력한다.
+
+### 오버라이딩과 프로퍼티 섀도잉
+
+```jsx
+const Person = (function () {
+  // 생성자 함수
+  function Person(name) {
+    this.name = name;
+  }
+
+  // 프로토타입 메서드
+  Person.prototype.sayHello = function () {
+    console.log(`Hi! My name is ${this.name}`);
+  };
+
+  // 생성자 함수를 반환
+  return Person;
+}());
+
+const me = new Person('Lee');
+
+// 인스턴스 메서드
+me.sayHello = function () {
+  console.log(`Hey! My name is ${this.name}`);
+};
+
+// 인스턴스 메서드가 호출된다. 프로토타입 메서드는 인스턴스 메서드에 의해 가려진다.
+me.sayHello(); // Hey! My name is Lee
+```
+
+- 인스턴스 메서드 sayHello 가 프로토타입 메서드 sayHello 를 오버라이딩 했고 프로토 타입 매서드는 가려진다. 이를 프로퍼티 섀도잉이라 한다.
+
+```jsx
+// 프로토타입 메서드 변경
+Person.prototype.sayHello = function () {
+  console.log(`Hey! My name is ${this.name}`);
+};
+me.sayHello(); // Hey! My name is Lee
+
+// 프로토타입 메서드 삭제
+delete Person.prototype.sayHello;
+me.sayHello(); // TypeError: me.sayHello is not a function
+```
+
+- 하위 객체를 통해 프로토타입의 프로퍼티 변경 또는 삭제는 불가능하다. 즉, 프로퍼티 변경 및 삭제는 프로퍼티 체인이 아닌 프로퍼티에 직접 접근해야만 가능하다.
+
+### Instanceof 연산자
+
+- 우변 생성자 함수의 prototpye 에 바인딩된 객체가 좌변 객체의 프로토타입 상에 존재하면 true 를, 그렇지 않은 경우 false 를 반환한다.
+
+```jsx
+// 생성자 함수
+function Person(name) {
+  this.name = name;
+}
+
+const me = new Person('Lee');
+
+// 프로토타입으로 교체할 객체
+const parent = {};
+
+// 프로토타입의 교체
+Object.setPrototypeOf(me, parent);
+
+// Person 생성자 함수와 parent 객체는 연결되어 있지 않다.
+console.log(Person.prototype === parent); // false
+console.log(parent.constructor === Person); // false
+
+// Person.prototype이 me 객체의 프로토타입 체인 상에 존재하지 않기 때문에 false로 평가된다.
+console.log(me instanceof Person); // false
+
+// Object.prototype이 me 객체의 프로토타입 체인 상에 존재하므로 true로 평가된다.
+console.log(me instanceof Object); // true
+```
+
+### 정적 프로퍼티/메서드
+
+- 생성자 함수로 인스턴스를 생성하지 않아도 참조/호출할 수 있는 프로퍼티/메서드를 말한다.
+
+```jsx
+// 생성자 함수
+function Person(name) {
+  this.name = name;
+}
+
+// 프로토타입 메서드
+Person.prototype.sayHello = function () {
+  console.log(`Hi! My name is ${this.name}`);
+};
+
+// 정적 프로퍼티
+Person.staticProp = 'static prop';
+
+// 정적 메서드
+Person.staticMethod = function () {
+  console.log('staticMethod');
+};
+
+const me = new Person('Lee');
+
+// 생성자 함수에 추가한 정적 프로퍼티/메서드는 생성자 함수로 참조/호출한다.
+Person.staticMethod(); // staticMethod
+
+// 정적 프로퍼티/메서드는 생성자 함수가 생성한 인스턴스로 참조/호출할 수 없다.
+// 인스턴스로 참조/호출할 수 있는 프로퍼티/메서드는 프로토타입 체인 상에 존재해야 한다.
+me.staticMethod(); // TypeError: me.staticMethod is not a function
+```
+
+- 인스턴스 프로토타입 체인에 속한 객체의 프로퍼티/메서드가 아님으로 인스턴으로부터의 접근은 불가능하다.
+
+### 프로퍼티 존재 확인
+
+- In 연산자
+    - 객체 내 특정 프로퍼티가 존재하는지의 여부를 확인할 수 있음
+    
+    ```jsx
+    const person = {
+      name: 'Lee',
+      address: 'Seoul'
+    };
+    
+    // person 객체에 name 프로퍼티가 존재한다.
+    console.log('name' in person);    // true
+    // person 객체에 address 프로퍼티가 존재한다.
+    console.log('address' in person); // true
+    // person 객체에 age 프로퍼티가 존재하지 않는다.
+    console.log('age' in person);     // false
+    ```
+    
+- `Object.hasOwnProperty` 메서드
+    - 객체에 특정 프로퍼티가 존재하는지 확인이 가능함
+    
+    ```jsx
+    const person = {
+      name: 'Lee',
+      address: 'Seoul'
+    };
+    
+    // for...in 문의 변수 prop에 person 객체의 프로퍼티 키가 할당된다.
+    for (const key in person) {
+      console.log(key + ': ' + person[key]);
+    }
+    // name: Lee
+    // address: Seoul
+    ```
+    
+
+### For…in 문
+
+- 객체의 프로토타입 체인 상에 존재하는 모든 프로토타입의 프로퍼티 중 어트리뷰트의 값이 true 인 프로퍼티를 순회하며 열거한다.
+
+```jsx
+const person = {
+  name: 'Lee',
+  address: 'Seoul'
+};
+
+// in 연산자는 객체가 상속받은 모든 프로토타입의 프로퍼티를 확인한다.
+console.log('toString' in person); // true
+
+// for...in 문도 객체가 상속받은 모든 프로토타입의 프로퍼티를 열거한다.
+// 하지만 toString과 같은 Object.prototype의 프로퍼티가 열거되지 않는다.
+for (const key in person) {
+  console.log(key + ': ' + person[key]);
+}
+
+// name: Lee
+// address: Seoul
+```
