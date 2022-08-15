@@ -40,7 +40,7 @@ console.log(circle.getDiameter()); // 10
 
 ---
 ### 함수 호출 방식과 this 바인딩
----
+
 this 바인딩은 함수 호출 방식, 즉 함수가 어떻게 호출 되었는지에 따라 동적으로 결정된다.
 
 this 바인딩은 함수 호출 시점에 결정된다. 
@@ -64,6 +64,7 @@ const person = {
 };
 console.log(person.getName()); // Lee
 ```
+---
 #### 생성자 함수 호출
 
 생성자 함수 내부의 this에는 생성자 함수가 (미래에) 생성할 인스턴스가 바인딩 된다.
