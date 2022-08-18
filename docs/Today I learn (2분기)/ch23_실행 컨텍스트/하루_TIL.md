@@ -104,7 +104,7 @@ foo(); // 6
 
 위 코드를 실행하면 코드가 실행되는 시간의 흐름에 따라 실행 컨텍스트 스택은 다음과 같이 실행 컨텍스트가 추가(psuh) 되고 제거(pop) 된다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/57395437-d976-4888-be8a-bd942993dde5/Untitled.png)
+![img](https://bkdevlog.netlify.com/assets/img/js_ec_stack.png)
 
 ### 23.5 렉시컬 환경
 
